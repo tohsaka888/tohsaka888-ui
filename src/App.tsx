@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Avatar from './components/Avatar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Avatar
+        size='default'
+        shape="circle"
+        src={"https://avatars.githubusercontent.com/u/58759688?s=400&u=842529771510454c0a08f62427e80b9485a8d524&v=4"}
+      />
     </div>
   );
 }
